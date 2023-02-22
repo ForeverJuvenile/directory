@@ -11,16 +11,16 @@
 ## Install
 
 ``` node
-npm install directory -g
+npm install directory-doc -g
 ```
 
 ## Usage
 
 ``` node
-$ directory --help
+$ directory-doc --help
 
-directory v1.0.0
-Usage: directory [options] [command]
+directory-doc v1.0.0
+Usage: directory-doc [options] [command]
 
 Options:
   -v, --version   output the current version
@@ -35,10 +35,10 @@ Commands:
 ## Example
 
 ```node
-$ directory init
+$ directory-doc init
 
 
-# directory 项目目录
+# directory-doc 项目目录
 
     |-- .git ---------------------------------- #
     |-- node_modules ---------------------------------- #

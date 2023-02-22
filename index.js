@@ -5,23 +5,23 @@ import { program } from 'commander';
 import chalk from 'chalk';
 import EventProcessingCenter from './src/hook.js';
 const pack = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-console.log(chalk.blueBright.bold(`directory v${pack.version}`));
+console.log(chalk.blueBright.bold(`directory-doc v${pack.version}`));
 
 /**node_modules .git and other folders do not need to be recursive*/
 let filterFolder = ['node_modules', '.git'];
-const processingCenter = new EventProcessingCenter({filterFolder})
 
 program
-    .name('directory')
+    .name('directory-doc')
     .version(pack.version, '-v, --version', 'output the current version');
 
 program
     .command('init')
     .description('Build the project file directory')
-    .option('-i, --ignore [ignore...]', 'You can ignore specific directory name', filterFolder)
+    .option('-i, --ignore [ignore...]', 'You can ignore specific directory name', )
     .option('-e, --export <file>', 'You can define the file name for the export', 'directory.md')
     .action((options) => {
-        filterFolder = options.ignore;
+        filterFolder = isBoolean(options.ignore) ? [] : options.ignore;
+        const processingCenter = new EventProcessingCenter({filterFolder})
         processingCenter.useInquirer(`${options.export}`);
     })
 program.parse(process.argv);

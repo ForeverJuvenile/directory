@@ -1,7 +1,7 @@
 {
-  "name": "directory",
+  "name": "directory-doc",
   "version": "1.0.0",
-  "author": "Jack Chen <13615685074@163.com>",
+  "author": "Forever <loveforever10.05.sir@gmail.com>(https://github.com/ForeverJuvenile)",
   "description": "Build the project file directory",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "bin": {
-    "directory": "index.js"
+    "directory-doc": "index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
     "node",
     "shell",
     "javascript",
-    "directory"
+    "directory",
+    "doc"
   ],
   "license": "ISC",
   "dependencies": {
