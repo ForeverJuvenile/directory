@@ -1,0 +1,32 @@
+{
+  "name": "directory",
+  "version": "1.0.0",
+  "author": "Jack Chen <13615685074@163.com>",
+  "description": "Build the project file directory",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "bin": {
+    "directory": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForeverJuvenile/directory"
+  },
+  "keywords": [
+    "node",
+    "shell",
+    "javascript",
+    "directory"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2",
+    "path": "^0.12.7"
+  }
+}
