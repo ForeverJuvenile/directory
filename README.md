@@ -1,7 +1,8 @@
-<div class="header">
-    <img class="logo" src="./public/logo.svg"/>
-    <a class="title" href="https://gitee.com/ForeverChenY/directory.git">Directory</a>
-    <p>Build the project file directory</p>
+
+<div  style="text-align: center;">
+    <img style=" width: 180px; height: 200px; margin: 0 auto;" src="./public/logo.svg"/>
+    <a style=" font-size: 2em; display: flex;justify-content: center; padding-bottom: 0.3em; font-weight: 600;" href="https://gitee.com/ForeverChenY/directory.git">Directory</a>
+    <p style="text-align: center;">Build the project file directory</p>
 </div>
 
 <!-- [![npm version](https://img.shields.io/npm/v/directory.svg)](https://www.npmjs.com/package/directory)[![Downloads](https://img.shields.io/npm/dm/directory.svg)](https://www.npmjs.com/package/directory) -->
@@ -48,30 +49,3 @@ $ directory init
 |-- src ---------------------------------- #
 |    |-- common.js ---------------------------------- #
 ```
-
-<style>
-    .header {
-        text-align: center;
-    }
-    .logo {
-        width: 180px;
-        height: 200px;
-        margin: 0 auto;
-    }
-
-    .title {
-        font-size: 2em;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 0.3em;
-        font-weight: 600;
-    }
-    p {
-        text-align: center;
-    }
-
-    a {
-        margin-right: 20px;
-        display: inline-block;
-    }
-</style>
