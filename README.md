@@ -1,11 +1,11 @@
 
-<div  style="text-align: center;">
-    <img style=" width: 180px; height: 200px; margin: 0 auto;" src="./public/logo.svg"/>
-    <a style=" font-size: 2em; display: flex;justify-content: center; padding-bottom: 0.3em; font-weight: 600;" href="https://gitee.com/ForeverChenY/directory.git">Directory</a>
-    <p style="text-align: center;">Build the project file directory</p>
-</div>
+<div align=center><a href="https://github.com/ForeverJuvenile/directory#readme"><img src="https://raw.githubusercontent.com/ForeverJuvenile/directory/1c34c1bce8163aec2fa615ae2a181be5e049a8a3/public/logo.svg"></a></div>
+<center><a href="https://github.com/ForeverJuvenile/directory#readme" ><font face="黑体" size=6>Directory</font></a></center>
+<center><font face="黑体">Build the project file directoryDirectory</font></center>
+<br/>
 
-<!-- [![npm version](https://img.shields.io/npm/v/directory.svg)](https://www.npmjs.com/package/directory)[![Downloads](https://img.shields.io/npm/dm/directory.svg)](https://www.npmjs.com/package/directory) -->
+<!-- [![npm version](https://img.shields.io/npm/v/directory.svg)](https://www.npmjs.com/package/directory)
+[![Downloads](https://img.shields.io/npm/dm/directory.svg)](https://www.npmjs.com/package/directory) -->
 
 ## Install
 
