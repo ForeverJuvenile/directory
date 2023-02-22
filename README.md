@@ -1,7 +1,7 @@
 
 <div align=center><a href="https://github.com/ForeverJuvenile/directory#readme"><img src="https://raw.githubusercontent.com/ForeverJuvenile/directory/1c34c1bce8163aec2fa615ae2a181be5e049a8a3/public/logo.svg"></a></div>
-<p><center><a href="https://github.com/ForeverJuvenile/directory#readme" ><font face="黑体" size=6>Directory</font></a></center></p>
-<p<center><font face="黑体">Build the project file directoryDirectory</font></center>></div>
+<div><center><a href="https://github.com/ForeverJuvenile/directory#readme" ><font face="黑体" size=6>Directory</font></a></center></div>
+<div></div><center><font face="黑体">Build the project file directoryDirectory</font></center>></div>
 <br/>
 
 <!-- [![npm version](https://img.shields.io/npm/v/directory.svg)](https://www.npmjs.com/package/directory)
