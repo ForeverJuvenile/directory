@@ -1,6 +1,18 @@
 {
     "presets": [
-        "es2015"
+        [
+        "@babel/preset-env",
+        {
+            "modules": false,
+            "useBuiltIns": "usage",
+            "corejs": "2.6.10"
+        }
+        ]
     ],
-    "plugins":[]
+    "plugins": [
+        ["@babel/plugin-transform-runtime"]
+    ],
+    "ignore": [
+        "node_modules/**"
+    ]
 }
