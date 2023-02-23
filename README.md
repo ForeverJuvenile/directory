@@ -5,8 +5,7 @@
 <div align=center><font face="黑体">Build the project file directoryDirectory</font></div>
 <br/>
 
-<!-- [![npm version](https://img.shields.io/npm/v/directory.svg)](https://www.npmjs.com/package/directory)
-[![Downloads](https://img.shields.io/npm/dm/directory.svg)](https://www.npmjs.com/package/directory) -->
+[![npm version](https://badge.fury.io/js/directory-doc.svg)](https://www.npmjs.com/package/directory-doc)
 
 ## Install
 
