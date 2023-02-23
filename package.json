@@ -14,7 +14,7 @@
   ],
   "main": "lib/index.js",
   "bin": {
-    "directory-doc": "index.js"
+    "directory-doc": "lib/index.js"
   },
   "repository": {
     "type": "git",
