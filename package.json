@@ -1,19 +1,24 @@
 {
   "name": "directory-doc",
   "version": "1.0.0",
-  "author": "Forever <loveforever10.05.sir@gmail.com>(https://github.com/ForeverJuvenile)",
+  "author": "Forever Chen <loveforever10.05.sir@gmail.com>(https://github.com/ForeverJuvenile)",
   "description": "Build the project file directory",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"babel ./src/hook.js --presets babel-preset-es2015 --out-dir lib & babel index.js --presets babel-preset-es2015 --out-dir lib",
+    "prepublish": "npm run build"
   },
-  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
   "bin": {
     "directory-doc": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ForeverJuvenile/directory"
+    "url": "https://github.com/ForeverJuvenile/directory.git"
   },
   "keywords": [
     "node",
@@ -22,12 +27,17 @@
     "directory",
     "doc"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
     "inquirer": "^9.1.4",
     "ora": "^6.1.2",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^4.1.2"
   }
 }

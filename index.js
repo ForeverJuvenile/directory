@@ -20,7 +20,8 @@ program
     .option('-i, --ignore [ignore...]', 'You can ignore specific directory name', )
     .option('-e, --export <file>', 'You can define the file name for the export', 'directory.md')
     .action((options) => {
-        filterFolder = isBoolean(options.ignore) ? [] : options.ignore;
+        filterFolder = typeof options.ignore === 'undefined' ? filterFolder : options.ignore;
+        console.log(filterFolder);
         const processingCenter = new EventProcessingCenter({filterFolder})
         processingCenter.useInquirer(`${options.export}`);
     })
