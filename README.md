@@ -6,6 +6,7 @@
 <br/>
 
 [![npm version](https://badge.fury.io/js/directory-doc.svg)](https://www.npmjs.com/package/directory-doc)
+[![npm version](https://img.shields.io/npm/dm/directory-doc.svg)](https://www.npmjs.com/package/directory-doc)
 
 ## Install
 
