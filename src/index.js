@@ -3,16 +3,17 @@
 import fs  from 'fs';
 import { program } from 'commander';
 import chalk from 'chalk';
-import EventProcessingCenter from './src/hook.js';
-// const pack = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-// console.log(chalk.blueBright.bold(`directory-doc v${pack.version}`));
+import EventProcessingCenter from './event.js';
+
+const pack = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+console.log(chalk.blueBright.bold(`directory-doc v${pack.version}`));
 
 /**node_modules .git and other folders do not need to be recursive*/
 let filterFolder = ['node_modules', '.git'];
 
 program
     .name('directory-doc')
-    .version(1212, '-v, --version', 'output the current version');
+    .version(pack.version, '-v, --version', 'output the current version');
 
 program
     .command('init')
@@ -21,7 +22,6 @@ program
     .option('-e, --export <file>', 'You can define the file name for the export', 'directory.md')
     .action((options) => {
         filterFolder = typeof options.ignore === 'undefined' ? filterFolder : options.ignore;
-        console.log(filterFolder);
         const processingCenter = new EventProcessingCenter({filterFolder})
         processingCenter.useInquirer(`${options.export}`);
     })

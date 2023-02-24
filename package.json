@@ -6,16 +6,16 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rollup -c rollup.config.js -w",
-    "build": "rollup -c rollup.config.js",
-    "prepublish": "npm run build"
+    "start": "node src/index.js",
+    "dev": "npm run start",
+    "init": "npm run start init"
   },
   "files": [
-    "lib"
+    "src"
   ],
-  "main": "bin/index.js",
+  "main": "src/index.js",
   "bin": {
-    "directory-doc": "bin/index.js"
+    "directory-doc": "src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "node",
     "javascript",
     "directory",
-    "doc"
+    "doc",
+    "Markdown"
   ],
   "license": "MIT",
   "dependencies": {
@@ -36,12 +37,5 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/plugin-transform-runtime": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
-    "rollup": "^3.17.2",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
