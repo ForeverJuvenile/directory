@@ -1,18 +1,22 @@
 #!/usr/bin/env node
-
 import fs  from 'fs';
-import { program } from 'commander';
+import path  from 'path';
 import chalk from 'chalk';
+import { program } from 'commander';
+import { fileURLToPath } from 'url';
 import EventProcessingCenter from './event.js';
 
-const pack = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const pack = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8'));
 console.log(chalk.blueBright.bold(`directory-doc v${pack.version}`));
 
 /**node_modules .git and other folders do not need to be recursive*/
 let filterFolder = ['node_modules', '.git'];
 
 program
-    .name('directory-doc')
+    .name(pack.name)
     .version(pack.version, '-v, --version', 'output the current version');
 
 program

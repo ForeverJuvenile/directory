@@ -1,6 +1,6 @@
 {
   "name": "directory-doc",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Forever Chen <loveforever10.05.sir@gmail.com>(https://github.com/ForeverJuvenile)",
   "description": "Build the project file directory",
   "type": "module",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "dev": "npm run start",
-    "init": "npm run start init"
+    "init": "npm run start init",
+    "prepare": "husky install"
   },
   "files": [
     "src"
@@ -26,16 +27,31 @@
     "javascript",
     "directory",
     "doc",
-    "Markdown"
+    "markdown"
   ],
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
     "inquirer": "^9.1.4",
-    "ora": "^6.1.2",
-    "path": "^0.12.7"
+    "ora": "^6.1.2"
   },
   "devDependencies": {
+    "@commitlint/config-angular": "^17.4.4",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.5.0",
+    "commitlint-config-cz": "^0.13.3",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "conventional-changelog-gitmoji-config": "^1.4.7",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.commitlintrc.cjs"
+    }
   }
 }

@@ -16,8 +16,9 @@ const spinner = ora({
 
 const directoryEnum = {
     outermost: '    |',
-    start: '    |-- ',
-    line: ' ---------------------------------- #'
+    start: '    |—— ',
+    last: '    L',
+    line: '     #'
 }
 
 const target = process.cwd();
@@ -39,7 +40,7 @@ const treeSort = (data, objectPath) => {
 const EventProcessingCenter = class {
     constructor(props){
         this.filterFolder = props.filterFolder;
-        this.directory = `# ${rootName} 项目目录\n\n`;
+        this.directory = ``;
         this.tree = {
             root: rootName,
             children: []
@@ -74,7 +75,8 @@ const EventProcessingCenter = class {
         setTimeout(() => {
             const { buildTree } = this.useQueryFile(this.filterFolder);
             buildTree(process.cwd());
-            fs.writeFile(this.fileName, this.directory, (error) => {
+            const data =  `${`# ${rootName} 项目目录\n\n`}` + '```ts\n' + this.directory + '```\n'
+            fs.writeFile(this.fileName, data, (error) => {
                 if(error){
                     console.log(error(new Error(`write ${ this.fileName} error`, { err })))
                     return;
