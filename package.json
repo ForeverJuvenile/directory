@@ -1,6 +1,6 @@
 {
   "name": "directory-doc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Forever Chen <loveforever10.05.sir@gmail.com>(https://github.com/ForeverJuvenile)",
   "description": "Build the project file directory",
   "type": "module",
